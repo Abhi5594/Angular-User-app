@@ -1,0 +1,9 @@
+<form (ngSubmit)="submitForm()">
+  <input type="text" placeholder="First Name" [(ngModel)]="user.firstname" name="firstname" required>
+  <input type="text" placeholder="Last Name" [(ngModel)]="user.lastname" name="lastname" required>
+  <input type="text" placeholder="User ID" [(ngModel)]="user.userid" name="userid" required>
+  <input type="number" placeholder="Age" [(ngModel)]="user.age" name="age" required>
+  <input type="email" placeholder="Email" [(ngModel)]="user.email" name="email" required>
+  <input type="text" placeholder="Address" [(ngModel)]="user.address" name="address" required>
+  <button type="submit">Submit</button>
+</form>

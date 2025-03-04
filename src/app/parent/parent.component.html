@@ -1,0 +1,23 @@
+<div class="parent-container">
+  <app-child (userAdded)="addUser($event)"></app-child>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>User ID</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+      <td>{{ user.firstname }}</td>
+      <td>{{ user.lastname }}</td>
+      <td>{{ user.userid }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.address }}</td>
+    </tr>
+  </table>
+</div>
+  
